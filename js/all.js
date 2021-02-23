@@ -15,15 +15,15 @@ appearData(bmidata)
 function choose(e) {
    if (e.target.nodeName === 'INPUT' && (height.value !== '' && weight.value !== ''))
       displayData();
-   else if (e.target.nodeName === 'INPUT' && (height.value === '' && weight.value === '')){
+   else if (e.target.nodeName === 'INPUT' && (height.value === '' && weight.value === '')) {
       warnH.textContent = '請輸入身高'
       warnW.textContent = '請輸入體重'
    }
    else if (e.target.nodeName === 'INPUT' && (height.value !== '' && weight.value === ''))
-   warnW.textContent = '請輸入體重'
+      warnW.textContent = '請輸入體重'
    else if (e.target.nodeName === 'INPUT' && (height.value === '' && weight.value !== ''))
-   warnH.textContent = '請輸入身高'
-   else if (e.target.nodeName === 'A' || e.target.nodeName === 'IMG') 
+      warnH.textContent = '請輸入身高'
+   else if (e.target.nodeName === 'A' || e.target.nodeName === 'IMG')
       reset();
 }
 
@@ -82,6 +82,7 @@ function displayData(e) {
 
 function reset(e) {
    document.querySelector('.form').reset();
+   submitP.innerHTML = `<input type="submit" value="計算" class="submit">`
 }
 
 function appearData(data) {
