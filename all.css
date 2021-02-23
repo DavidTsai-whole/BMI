@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.header{
+    background: #424242;
+	position: relative;
+}
+.hContent{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 300px;
+	max-width: 800px;
+	margin: auto;
+	
+}
+.form{
+	color:#ffd366;
+	display: flex;
+	
+}
+.form label{
+	margin-bottom: 5px;
+	
+}
+.form input{
+	height: 20px;
+	width: 190px;
+	
+}
+.form h1{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.form h2{
+	font-size: 20px;
+}
+.input{
+	display: flex;
+	flex-direction: column;
+}
+.labelW{
+	margin-top:6px;
+}
+.warnH{
+	color:red;
+	
+}
+.warnW{
+	color: red;
+}
+.submit{
+	height: 120px;
+	width: 120px;
+	background: #ffd366;
+	border:6px solid #ffd366;
+	border-radius: 50%;
+	color:black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	
+	
+}
+.submit:hover{
+	cursor: pointer;
+}
+.result{
+	height: 120px;
+	width: 120px;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	position: relative;
+	
+}
+.f5{
+	text-decoration: none;
+	width: 8px;
+	height: 8px;
+	padding:12px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position:absolute;
+	right:-9px;
+	bottom:10px;
+	
+}
+.f5:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+}
+.content{
+	background: #e1e0e0;
+	padding-bottom: 50px;
+	text-align: center;
+	min-height:calc(100vh - 300px - 250px);
+}
+.content h2{
+	font-size: 40px;
+	font-weight: bold;
+	padding-top: 50px;
+	
+}
+.button{
+	margin-top: 40px;
+	padding: 10px;
+	display: none;
+}
+.bmiList{
+	margin: auto;
+	max-width: 1000px;
+	padding-top: 30px;
+}
+.bmiList li{
+	display:flex ;
+	justify-content: space-around;
+	padding:20px;
+	background: white;
+	margin-bottom: 20px;
+	align-items: center;
+
+}
+.fas:hover{
+	cursor: pointer;
+}
+.footer{
+	background: #ffd366;
+	height: 200px;
+}
